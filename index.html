@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- link icon -->
+    <link rel="icon"type="image/png" href="https://www.google.com/s2/u/0/favicons?domain=jacinto.design"/>     
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"      
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+   
+  </head>
+  <body>
+    <div class="player-container">
+      <!-- song -->
+      <div class="img-container">
+        <img
+          src="img/navjot-1.jpg"
+          alt="Album"
+        />
+      </div>
+      <h2 id="tittle">jutti jatti Di</h2>
+      <h3 id="artist">Navjot </h3>
+      <audio src="music/navjot-1.mp3"></audio>
+      <!-- step2 progress -->
+      <div class="progress-container" id="progress-container">
+        <div class="progress" id="progress"></div>
+        <div class="duration-wrapper">
+          <span id="current-time">0:00</span>
+          <sapn id="duration">3:00</sapn>
+        </div>
+    </div>
+
+        <!-- controls -->
+        <div class="player-controls">
+          <i class="fas fa-backward" id="prev" title="previous"></i>
+          <i class="fas fa-play main-button" id="play" title="play"></i>
+          <i class="fas fa-forward" id="next" title="next"></i>
+        </div>
+      
+    </div>
+
+    <!-- script -->
+    <script src="script.js"></script>
+  </body>
+</html>
